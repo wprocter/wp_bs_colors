@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="color.css">
+    <title>colors</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin:0; padding:0;
+            box-sizing: border-box;
+            
+        }
+        /* Swatch utility: make boxes square and center text */
+    .swatch{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+    .backup-btn {
+        position:fixed;
+        bottom:100px;
+        right:100px;
+        width:200px;
+
+    }
+    </style>
+</head>
+<body class="bg-light ">
+    <div id="#top" class="container mt-5 text-purple-7">
+        <h1>The color palette extender for Bootstrap</h1>
+        <p>This is a run through of the colors included</p>
+        <p class="text-red-5">Make sure you include this AFTER the Bootstrap CSS file</p>
+        <a href="#bgcolors">Background Colors</a> | <a href ="#text">Text Colors</a> | <a href="#borders">Border Colors</a> | <a href="#buttons">Button Colors</a>
+    </div>
+    <a class="btn btn-pink m-3 backup-btn" href="#top">Back up </a>
+    <div class="container bg-white rounded shadow mb-3 p-3 ">
+        <div class="row">
+            <div class="col swatch bg-blue-1">.bg-blue-1 <br> #cfe2ff</div>
+            <div class="col swatch bg-blue-2">.bg-blue-2 <br> #9ec5fe</div>
+            <div class="col swatch bg-blue-3">.bg-blue-3 <br> #6ea8fe</div>
+            <div class="col swatch bg-blue-4">.bg-blue-4 <br> #3d8bfd</div>
+            <div class="col swatch bg-blue-5 text-white">bg-blue-5 <br> #0d6efd</div>
+            <div class="col swatch bg-blue-6 text-white">bg-blue-6 <br>#0a58ca</div>
+            <div class="col swatch bg-blue-7 text-white">bg-blue-7 <br>#084298</div>
+            <div class="col swatch bg-blue-8 text-white">bg-blue-8 <br>#052c65</div>
+            <div class="col swatch bg-blue-9 text-white">bg-blue-9 <br>#031633</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-indigo-1">.bg-indigo-1 <br>#e0cffc</div>
+            <div class="col swatch bg-indigo-2">.bg-indigo-2 <br>#c29ffa</div>
+            <div class="col swatch bg-indigo-3">.bg-indigo-3 <br>#a370f7</div>
+            <div class="col swatch bg-indigo-4">.bg-indigo-4 <br>#8540f5</div>
+            <div class="col swatch bg-indigo-5 text-white">.bg-indigo-5 <br>#6610f2</div>
+            <div class="col swatch bg-indigo-6 text-white">.bg-indigo-6 <br>#520dc2</div>
+            <div class="col swatch bg-indigo-7 text-white">.bg-indigo-7 <br>#3d0a91</div>
+            <div class="col swatch bg-indigo-8 text-white">.bg-indigo-8 <br>#290661</div>
+            <div class="col swatch bg-indigo-9 text-white">.bg-indigo-9 <br>#140330</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-purple-1">.bg-purple-1 <br>#e2d9f3</div>
+            <div class="col swatch bg-purple-2">.bg-purple-2 <br>#c5b3e6</div>
+            <div class="col swatch bg-purple-3">.bg-purple-3 <br>#a98eda</div>
+            <div class="col swatch bg-purple-4">.bg-purple-4 <br>#8c68cd</div>
+            <div class="col swatch bg-purple-5 text-white">.bg-purple-5 <br>#6f42c1</div>
+            <div class="col swatch bg-purple-6 text-white">.bg-purple-6 <br>#59359a</div>
+            <div class="col swatch bg-purple-7 text-white">.bg-purple-7 <br>#432874</div>
+            <div class="col swatch bg-purple-8 text-white">.bg-purple-8 <br>#2c1a4d</div>
+            <div class="col swatch bg-purple-9 text-white">.bg-purple-9 <br>#160d27</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-pink-1">.bg-pink-1 <br> #f7d6e6</div>
+            <div class="col swatch bg-pink-2">.bg-pink-2 <br> #efadce</div>
+            <div class="col swatch bg-pink-3">.bg-pink-3 <br> #e685b5</div>
+            <div class="col swatch bg-pink-4">.bg-pink-4 <br> #de5c9d</div>
+            <div class="col swatch bg-pink-5 text-white">.bg-pink-5 <br> #d63384</div>
+            <div class="col swatch bg-pink-6 text-white">.bg-pink-6 <br> #ab296a</div>
+            <div class="col swatch bg-pink-7 text-white">.bg-pink-7 <br> #801f4f</div>
+            <div class="col swatch bg-pink-8 text-white">.bg-pink-8 <br> #561435</div>
+            <div class="col swatch bg-pink-9 text-white">.bg-pink-9 <br> #2b0a1a</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-red-1">.bg-red-1 <br> #f8d7da</div>
+            <div class="col swatch bg-red-2">.bg-red-2 <br> #f1aeb5</div>
+            <div class="col swatch bg-red-3">.bg-red-3 <br> #ea868f</div>
+            <div class="col swatch bg-red-4">.bg-red-4 <br> #e35d6a</div>
+            <div class="col swatch bg-red-5 text-white">.bg-red-5 <br> #dc3545</div>
+            <div class="col swatch bg-red-6 text-white">.bg-red-6 <br> #b02a37</div>
+            <div class="col swatch bg-red-7 text-white">.bg-red-7 <br> #842029</div>
+            <div class="col swatch bg-red-8 text-white">.bg-red-8 <br> #58151c</div>
+            <div class="col swatch bg-red-9 text-white">.bg-red-9 <br> #2c0b0e</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-orange-1">.bg-orange-1 <br> #ffe5d0</div>
+            <div class="col swatch bg-orange-2">.bg-orange-2 <br> #ffe5d0#fecba1</div>
+            <div class="col swatch bg-orange-3">.bg-orange-3 <br> #ffe5d0#feb272</div>
+            <div class="col swatch bg-orange-4">.bg-orange-4 <br> #ffe5d0#fd9843</div>
+            <div class="col swatch bg-orange-5 text-white">.bg-orange-5 <br> #ffe5d0#fd7e14</div>
+            <div class="col swatch bg-orange-6 text-white">.bg-orange-6 <br> #ffe5d0#ca6510</div>
+            <div class="col swatch bg-orange-7 text-white">.bg-orange-7 <br> #ffe5d0#984c0c</div>
+            <div class="col swatch bg-orange-8 text-white">.bg-orange-8 <br> #ffe5d0#653208</div>
+            <div class="col swatch bg-orange-9 text-white">.bg-orange-9 <br> #ffe5d0#331904</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-yellow-1">.bg-yellow-1 <br> #ffe5d0#fff3cd</div>
+            <div class="col swatch bg-yellow-2">.bg-yellow-2 <br> #ffe69c</div>
+            <div class="col swatch bg-yellow-3">.bg-yellow-3 <br> #ffda6a</div>
+            <div class="col swatch bg-yellow-4">.bg-yellow-4 <br> #ffcd39</div>
+            <div class="col swatch bg-yellow-5 text-white">.bg-yellow-5 <br> #ffc107</div>
+            <div class="col swatch bg-yellow-6 text-white">.bg-yellow-6 <br> #cc9a06</div>
+            <div class="col swatch bg-yellow-7 text-white">.bg-yellow-7 <br> #997404</div>
+            <div class="col swatch bg-yellow-8 text-white">.bg-yellow-8 <br> #664d03</div>
+            <div class="col swatch bg-yellow-9 text-white">.bg-yellow-9 <br> #332701</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-green-1">.bg-green-1 <br> #d1e7dd</div>
+            <div class="col swatch bg-green-2">.bg-green-2 <br> #a3cfbb</div>
+            <div class="col swatch bg-green-3">.bg-green-3 <br> #75b798</div>
+            <div class="col swatch bg-green-4">.bg-green-4 <br> #479f76</div>
+            <div class="col swatch bg-green-5 text-white">.bg-green-5 <br> #198754</div>
+            <div class="col swatch bg-green-6 text-white">.bg-green-6 <br> #146c43</div>
+            <div class="col swatch bg-green-7 text-white">.bg-green-7 <br> #0f5132</div>
+            <div class="col swatch bg-green-8 text-white">.bg-green-8 <br> #0a3622</div>
+            <div class="col swatch bg-green-9 text-white">.bg-green-9 <br> #051b11</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-teal-1">.bg-teal-1 <br> #d2f4ea</div>
+            <div class="col swatch bg-teal-2">.bg-teal-2 <br> #a6e9d5</div>
+            <div class="col swatch bg-teal-3">.bg-teal-3 <br> #79dfc1</div>
+            <div class="col swatch bg-teal-4">.bg-teal-4 <br> #4dd4ac</div>
+            <div class="col swatch bg-teal-5 text-white">.bg-teal-5 <br> #20c997</div>
+            <div class="col swatch bg-teal-6 text-white">.bg-teal-6 <br> #1aa179</div>
+            <div class="col swatch bg-teal-7 text-white">.bg-teal-7 <br> #13795b</div>
+            <div class="col swatch bg-teal-8 text-white">.bg-teal-8 <br> #0d503c</div>
+            <div class="col swatch bg-teal-9 text-white">.bg-teal-9 <br> #06281e</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-cyan-1">.bg-cyan-1 <br> #cff4fc</div>
+            <div class="col swatch bg-cyan-2">.bg-cyan-2 <br> #9eeaf9</div>
+            <div class="col swatch bg-cyan-3">.bg-cyan-3 <br> #6edff6</div>
+            <div class="col swatch bg-cyan-4">.bg-cyan-4 <br> #3dd5f3</div>
+            <div class="col swatch bg-cyan-5 text-white">.bg-cyan-5 <br> #0dcaf0</div>
+            <div class="col swatch bg-cyan-6 text-white">.bg-cyan-6 <br> #0aa2c0</div>
+            <div class="col swatch bg-cyan-7 text-white">.bg-cyan-7 <br> #087990</div>
+            <div class="col swatch bg-cyan-8 text-white">.bg-cyan-8 <br> #055160</div>
+            <div class="col swatch bg-cyan-9 text-white">.bg-cyan-9 <br> #032830</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-gray-1">.bg-grey-1 <br> #f8f9fa</div>
+            <div class="col swatch bg-gray-2">.bg-grey-2 <br> #e9ecef</div>
+            <div class="col swatch bg-gray-3">.bg-grey-3 <br> #dee2e6</div>
+            <div class="col swatch bg-gray-4">.bg-grey-4 <br> #ced4da</div>
+            <div class="col swatch bg-gray-5">.bg-grey-5 <br> #adb5bd</div>
+            <div class="col swatch bg-gray-6">.bg-grey-6 <br> #6c757d</div>
+            <div class="col swatch bg-gray-7">.bg-grey-7 <br> #495057</div>
+            <div class="col swatch bg-gray-8 text-white">.bg-grey-8 <br> #343a40</div>
+            <div class="col swatch bg-gray-9 text-white">.bg-grey-9 <br> #212529</div>
+        </div>
+        <div class="row">
+            <div class="col swatch bg-p-blue">.bg-p-glue <br> #a7c7e7</div>
+            <div class="col swatch bg-p-green">.bg-p-green <br> #b0e57c</div>
+            <div class="col swatch bg-p-yellow">.bg-p-yellow <br> #fdfd96</div>
+            <div class="col swatch bg-p-pink">.bg-p-pink <br> #ffb3de</div>
+            <div class="col swatch bg-p-purple">.bg-p-purple <br> #cba6f7</div>
+            <div class="col swatch bg-p-orange">.bg-p-orange <br> #ffcc99</div>
+            <div class="col swatch bg-p-teal">.bg-p-teal <br> #99e6e6</div>
+            <div class="col swatch bg-p-red">.bg-p-red <br> #ff9999</div>
+            <div class="col swatch bg-p-gray">.bg-p-grey<br> #d3d3d3</div>
+        </div>
+
+    </div>
+
+    <div id="bgcolors" class="container bg-white rounded shadow mb-3 p-3"> <!-- bg-color-->
+        <h2> Background Colors (.bg-color-n)</h2>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-blue-1 p-1 mb-1">.bg-blue-1</div>
+                        <div class="bg-blue-2 p-1 mb-1">.bg-blue-2</div>
+                        <div class="bg-blue-3 p-1 mb-1">.bg-blue-3</div>
+                        <div class="bg-blue-4 p-1 mb-1">.bg-blue-4</div>
+                        <div class="bg-blue-5 p-1 mb-1 text-white">.bg-blue-5</div>
+                        <div class="bg-blue-6 p-1 mb-1 text-white">.bg-blue-6</div>
+                        <div class="bg-blue-7 p-1 mb-1 text-white">.bg-blue-7</div>
+                        <div class="bg-blue-8 p-1 mb-1 text-white">.bg-blue-8</div>
+                        <div class="bg-blue-9 p-1 mb-1 text-white">.bg-blue-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-blue-1 p-1 mb-1">.bg-blue-1</div>
+                        <div class="bg-blue-2 p-1 mb-1">.bg-blue-2</div>
+                        <div class="bg-blue-3 p-1 mb-1">.bg-blue-3</div>
+                        <div class="bg-blue-4 p-1 mb-1">.bg-blue-4</div>
+                        <div class="bg-blue-5 p-1 mb-1 text-white">.bg-blue-5</div>
+                        <div class="bg-blue-6 p-1 mb-1 text-white">.bg-blue-6</div>
+                        <div class="bg-blue-7 p-1 mb-1 text-white">.bg-blue-7</div>
+                        <div class="bg-blue-8 p-1 mb-1 text-white">.bg-blue-8</div>
+                        <div class="bg-blue-9 p-1 mb-1 text-white">.bg-blue-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-indigo-1 p-1 mb-1">.bg-indigo-1</div>
+                        <div class="bg-indigo-2 p-1 mb-1">.bg-indigo-2</div>
+                        <div class="bg-indigo-3 p-1 mb-1">.bg-indigo-3</div>
+                        <div class="bg-indigo-4 p-1 mb-1">.bg-indigo-4</div>
+                        <div class="bg-indigo-5 p-1 mb-1 text-white">.bg-indigo-5</div>
+                        <div class="bg-indigo-6 p-1 mb-1 text-white">.bg-indigo-6</div>
+                        <div class="bg-indigo-7 p-1 mb-1 text-white">.bg-indigo-7</div>
+                        <div class="bg-indigo-8 p-1 mb-1 text-white">.bg-indigo-8</div>
+                        <div class="bg-indigo-9 p-1 mb-1 text-white">.bg-indigo-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-indigo-1 p-1 mb-1">.bg-indigo-1</div>
+                        <div class="bg-indigo-2 p-1 mb-1">.bg-indigo-2</div>
+                        <div class="bg-indigo-3 p-1 mb-1">.bg-indigo-3</div>
+                        <div class="bg-indigo-4 p-1 mb-1">.bg-indigo-4</div>
+                        <div class="bg-indigo-5 p-1 mb-1 text-white">.bg-indigo-5</div>
+                        <div class="bg-indigo-6 p-1 mb-1 text-white">.bg-indigo-6</div>
+                        <div class="bg-indigo-7 p-1 mb-1 text-white">.bg-indigo-7</div>
+                        <div class="bg-indigo-8 p-1 mb-1 text-white">.bg-indigo-8</div>
+                        <div class="bg-indigo-9 p-1 mb-1 text-white">.bg-indigo-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-purple-1 p-1 mb-1">.bg-purple-1</div>
+                        <div class="bg-purple-2 p-1 mb-1">.bg-purple-2</div>
+                        <div class="bg-purple-3 p-1 mb-1">.bg-purple-3</div>
+                        <div class="bg-purple-4 p-1 mb-1">.bg-purple-4</div>
+                        <div class="bg-purple-5 p-1 mb-1 text-white">.bg-purple-5</div>
+                        <div class="bg-purple-6 p-1 mb-1 text-white">.bg-purple-6</div>
+                        <div class="bg-purple-7 p-1 mb-1 text-white">.bg-purple-7</div>
+                        <div class="bg-purple-8 p-1 mb-1 text-white">.bg-purple-8</div>
+                        <div class="bg-purple-9 p-1 mb-1 text-white">.bg-purple-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-purple-1 p-1 mb-1">.bg-purple-1</div>
+                        <div class="bg-purple-2 p-1 mb-1">.bg-purple-2</div>
+                        <div class="bg-purple-3 p-1 mb-1">.bg-purple-3</div>
+                        <div class="bg-purple-4 p-1 mb-1">.bg-purple-4</div>
+                        <div class="bg-purple-5 p-1 mb-1 text-white">.bg-purple-5</div>
+                        <div class="bg-purple-6 p-1 mb-1 text-white">.bg-purple-6</div>
+                        <div class="bg-purple-7 p-1 mb-1 text-white">.bg-purple-7</div>
+                        <div class="bg-purple-8 p-1 mb-1 text-white">.bg-purple-8</div>
+                        <div class="bg-purple-9 p-1 mb-1 text-white">.bg-purple-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-pink-1 p-1 mb-1">.bg-pink-1</div>
+                        <div class="bg-pink-2 p-1 mb-1">.bg-pink-2</div>
+                        <div class="bg-pink-3 p-1 mb-1">.bg-pink-3</div>
+                        <div class="bg-pink-4 p-1 mb-1">.bg-pink-4</div>
+                        <div class="bg-pink-5 p-1 mb-1 text-white">.bg-pink-5</div>
+                        <div class="bg-pink-6 p-1 mb-1 text-white">.bg-pink-6</div>
+                        <div class="bg-pink-7 p-1 mb-1 text-white">.bg-pink-7</div>
+                        <div class="bg-pink-8 p-1 mb-1 text-white">.bg-pink-8</div>
+                        <div class="bg-pink-9 p-1 mb-1 text-white">.bg-pink-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-pink-1 p-1 mb-1">.bg-pink-1</div>
+                        <div class="bg-pink-2 p-1 mb-1">.bg-pink-2</div>
+                        <div class="bg-pink-3 p-1 mb-1">.bg-pink-3</div>
+                        <div class="bg-pink-4 p-1 mb-1">.bg-pink-4</div>
+                        <div class="bg-pink-5 p-1 mb-1 text-white">.bg-pink-5</div>
+                        <div class="bg-pink-6 p-1 mb-1 text-white">.bg-pink-6</div>
+                        <div class="bg-pink-7 p-1 mb-1 text-white">.bg-pink-7</div>
+                        <div class="bg-pink-8 p-1 mb-1 text-white">.bg-pink-8</div>
+                        <div class="bg-pink-9 p-1 mb-1 text-white">.bg-pink-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-red-1 p-1 mb-1">.bg-red-1</div>
+                        <div class="bg-red-2 p-1 mb-1">.bg-red-2</div>
+                        <div class="bg-red-3 p-1 mb-1">.bg-red-3</div>
+                        <div class="bg-red-4 p-1 mb-1">.bg-red-4</div>
+                        <div class="bg-red-5 p-1 mb-1 text-white">.bg-red-5</div>
+                        <div class="bg-red-6 p-1 mb-1 text-white">.bg-red-6</div>
+                        <div class="bg-red-7 p-1 mb-1 text-white">.bg-red-7</div>
+                        <div class="bg-red-8 p-1 mb-1 text-white">.bg-red-8</div>
+                        <div class="bg-red-9 p-1 mb-1 text-white">.bg-red-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-red-1 p-1 mb-1">.bg-red-1</div>
+                        <div class="bg-red-2 p-1 mb-1">.bg-red-2</div>
+                        <div class="bg-red-3 p-1 mb-1">.bg-red-3</div>
+                        <div class="bg-red-4 p-1 mb-1">.bg-red-4</div>
+                        <div class="bg-red-5 p-1 mb-1 text-white">.bg-red-5</div>
+                        <div class="bg-red-6 p-1 mb-1 text-white">.bg-red-6</div>
+                        <div class="bg-red-7 p-1 mb-1 text-white">.bg-red-7</div>
+                        <div class="bg-red-8 p-1 mb-1 text-white">.bg-red-8</div>
+                        <div class="bg-red-9 p-1 mb-1 text-white">.bg-red-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-orange-1 p-1 mb-1">.bg-orange-1</div>
+                        <div class="bg-orange-2 p-1 mb-1">.bg-orange-2</div>
+                        <div class="bg-orange-3 p-1 mb-1">.bg-orange-3</div>
+                        <div class="bg-orange-4 p-1 mb-1">.bg-orange-4</div>
+                        <div class="bg-orange-5 p-1 mb-1 text-white">.bg-orange-5</div>
+                        <div class="bg-orange-6 p-1 mb-1 text-white">.bg-orange-6</div>
+                        <div class="bg-orange-7 p-1 mb-1 text-white">.bg-orange-7</div>
+                        <div class="bg-orange-8 p-1 mb-1 text-white">.bg-orange-8</div>
+                        <div class="bg-orange-9 p-1 mb-1 text-white">.bg-orange-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-orange-1 p-1 mb-1">.bg-orange-1</div>
+                        <div class="bg-orange-2 p-1 mb-1">.bg-orange-2</div>
+                        <div class="bg-orange-3 p-1 mb-1">.bg-orange-3</div>
+                        <div class="bg-orange-4 p-1 mb-1">.bg-orange-4</div>
+                        <div class="bg-orange-5 p-1 mb-1 text-white">.bg-orange-5</div>
+                        <div class="bg-orange-6 p-1 mb-1 text-white">.bg-orange-6</div>
+                        <div class="bg-orange-7 p-1 mb-1 text-white">.bg-orange-7</div>
+                        <div class="bg-orange-8 p-1 mb-1 text-white">.bg-orange-8</div>
+                        <div class="bg-orange-9 p-1 mb-1 text-white">.bg-orange-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-yellow-1 p-1 mb-1">.bg-yellow-1</div>
+                        <div class="bg-yellow-2 p-1 mb-1">.bg-yellow-2</div>
+                        <div class="bg-yellow-3 p-1 mb-1">.bg-yellow-3</div>
+                        <div class="bg-yellow-4 p-1 mb-1">.bg-yellow-4</div>
+                        <div class="bg-yellow-5 p-1 mb-1 text-white">.bg-yellow-5</div>
+                        <div class="bg-yellow-6 p-1 mb-1 text-white">.bg-yellow-6</div>
+                        <div class="bg-yellow-7 p-1 mb-1 text-white">.bg-yellow-7</div>
+                        <div class="bg-yellow-8 p-1 mb-1 text-white">.bg-yellow-8</div>
+                        <div class="bg-yellow-9 p-1 mb-1 text-white">.bg-yellow-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-yellow-1 p-1 mb-1">.bg-yellow-1</div>
+                        <div class="bg-yellow-2 p-1 mb-1">.bg-yellow-2</div>
+                        <div class="bg-yellow-3 p-1 mb-1">.bg-yellow-3</div>
+                        <div class="bg-yellow-4 p-1 mb-1">.bg-yellow-4</div>
+                        <div class="bg-yellow-5 p-1 mb-1 text-white">.bg-yellow-5</div>
+                        <div class="bg-yellow-6 p-1 mb-1 text-white">.bg-yellow-6</div>
+                        <div class="bg-yellow-7 p-1 mb-1 text-white">.bg-yellow-7</div>
+                        <div class="bg-yellow-8 p-1 mb-1 text-white">.bg-yellow-8</div>
+                        <div class="bg-yellow-9 p-1 mb-1 text-white">.bg-yellow-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-green-1 p-1 mb-1">.bg-green-1</div>
+                        <div class="bg-green-2 p-1 mb-1">.bg-green-2</div>
+                        <div class="bg-green-3 p-1 mb-1">.bg-green-3</div>
+                        <div class="bg-green-4 p-1 mb-1">.bg-green-4</div>
+                        <div class="bg-green-5 p-1 mb-1 text-white">.bg-green-5</div>
+                        <div class="bg-green-6 p-1 mb-1 text-white">.bg-green-6</div>
+                        <div class="bg-green-7 p-1 mb-1 text-white">.bg-green-7</div>
+                        <div class="bg-green-8 p-1 mb-1 text-white">.bg-green-8</div>
+                        <div class="bg-green-9 p-1 mb-1 text-white">.bg-green-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-green-1 p-1 mb-1">.bg-green-1</div>
+                        <div class="bg-green-2 p-1 mb-1">.bg-green-2</div>
+                        <div class="bg-green-3 p-1 mb-1">.bg-green-3</div>
+                        <div class="bg-green-4 p-1 mb-1">.bg-green-4</div>
+                        <div class="bg-green-5 p-1 mb-1 text-white">.bg-green-5</div>
+                        <div class="bg-green-6 p-1 mb-1 text-white">.bg-green-6</div>
+                        <div class="bg-green-7 p-1 mb-1 text-white">.bg-green-7</div>
+                        <div class="bg-green-8 p-1 mb-1 text-white">.bg-green-8</div>
+                        <div class="bg-green-9 p-1 mb-1 text-white">.bg-green-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-teal-1 p-1 mb-1">.bg-teal-1</div>
+                        <div class="bg-teal-2 p-1 mb-1">.bg-teal-2</div>
+                        <div class="bg-teal-3 p-1 mb-1">.bg-teal-3</div>
+                        <div class="bg-teal-4 p-1 mb-1">.bg-teal-4</div>
+                        <div class="bg-teal-5 p-1 mb-1 text-white">.bg-teal-5</div>
+                        <div class="bg-teal-6 p-1 mb-1 text-white">.bg-teal-6</div>
+                        <div class="bg-teal-7 p-1 mb-1 text-white">.bg-teal-7</div>
+                        <div class="bg-teal-8 p-1 mb-1 text-white">.bg-teal-8</div>
+                        <div class="bg-teal-9 p-1 mb-1 text-white">.bg-teal-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-teal-1 p-1 mb-1">.bg-teal-1</div>
+                        <div class="bg-teal-2 p-1 mb-1">.bg-teal-2</div>
+                        <div class="bg-teal-3 p-1 mb-1">.bg-teal-3</div>
+                        <div class="bg-teal-4 p-1 mb-1">.bg-teal-4</div>
+                        <div class="bg-teal-5 p-1 mb-1 text-white">.bg-teal-5</div>
+                        <div class="bg-teal-6 p-1 mb-1 text-white">.bg-teal-6</div>
+                        <div class="bg-teal-7 p-1 mb-1 text-white">.bg-teal-7</div>
+                        <div class="bg-teal-8 p-1 mb-1 text-white">.bg-teal-8</div>
+                        <div class="bg-teal-9 p-1 mb-1 text-white">.bg-teal-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-cyan-1 p-1 mb-1">.bg-cyan-1</div>
+                        <div class="bg-cyan-2 p-1 mb-1">.bg-cyan-2</div>
+                        <div class="bg-cyan-3 p-1 mb-1">.bg-cyan-3</div>
+                        <div class="bg-cyan-4 p-1 mb-1">.bg-cyan-4</div>
+                        <div class="bg-cyan-5 p-1 mb-1 text-white">.bg-cyan-5</div>
+                        <div class="bg-cyan-6 p-1 mb-1 text-white">.bg-cyan-6</div>
+                        <div class="bg-cyan-7 p-1 mb-1 text-white">.bg-cyan-7</div>
+                        <div class="bg-cyan-8 p-1 mb-1 text-white">.bg-cyan-8</div>
+                        <div class="bg-cyan-9 p-1 mb-1 text-white">.bg-cyan-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-cyan-1 p-1 mb-1">.bg-cyan-1</div>
+                        <div class="bg-cyan-2 p-1 mb-1">.bg-cyan-2</div>
+                        <div class="bg-cyan-3 p-1 mb-1">.bg-cyan-3</div>
+                        <div class="bg-cyan-4 p-1 mb-1">.bg-cyan-4</div>
+                        <div class="bg-cyan-5 p-1 mb-1 text-white">.bg-cyan-5</div>
+                        <div class="bg-cyan-6 p-1 mb-1 text-white">.bg-cyan-6</div>
+                        <div class="bg-cyan-7 p-1 mb-1 text-white">.bg-cyan-7</div>
+                        <div class="bg-cyan-8 p-1 mb-1 text-white">.bg-cyan-8</div>
+                        <div class="bg-cyan-9 p-1 mb-1 text-white">.bg-cyan-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-gray-1 p-1 mb-1">.bg-gray-1</div>
+                        <div class="bg-gray-2 p-1 mb-1">.bg-gray-2</div>
+                        <div class="bg-gray-3 p-1 mb-1">.bg-gray-3</div>
+                        <div class="bg-gray-4 p-1 mb-1">.bg-gray-4</div>
+                        <div class="bg-gray-5 p-1 mb-1 text-white">.bg-gray-5</div>
+                        <div class="bg-gray-6 p-1 mb-1 text-white">.bg-gray-6</div>
+                        <div class="bg-gray-7 p-1 mb-1 text-white">.bg-gray-7</div>
+                        <div class="bg-gray-8 p-1 mb-1 text-white">.bg-gray-8</div>
+                        <div class="bg-gray-9 p-1 mb-1 text-white">.bg-gray-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-gray-1 p-1 mb-1">.bg-gray-1</div>
+                        <div class="bg-gray-2 p-1 mb-1">.bg-gray-2</div>
+                        <div class="bg-gray-3 p-1 mb-1">.bg-gray-3</div>
+                        <div class="bg-gray-4 p-1 mb-1">.bg-gray-4</div>
+                        <div class="bg-gray-5 p-1 mb-1 text-white">.bg-gray-5</div>
+                        <div class="bg-gray-6 p-1 mb-1 text-white">.bg-gray-6</div>
+                        <div class="bg-gray-7 p-1 mb-1 text-white">.bg-gray-7</div>
+                        <div class="bg-gray-8 p-1 mb-1 text-white">.bg-gray-8</div>
+                        <div class="bg-gray-9 p-1 mb-1 text-white">.bg-gray-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="bg-p-blue p-1 mb-1">.bg-p-blue</div>
+                        <div class="bg-p-green p-1 mb-1">.bg-p-green</div>
+                        <div class="bg-p-yellow p-1 mb-1">.bg-p-yellow</div>
+                        <div class="bg-p-pink p-1 mb-1">.bg-p-pink</div>
+                        <div class="bg-p-purple p-1 mb-1 text-white">.bg-p-purple</div>
+                        <div class="bg-p-orange p-1 mb-1 text-white">.bg-p-orange</div>
+                        <div class="bg-p-teal p-1 mb-1 text-white">.bg-p-teal</div>
+                        <div class="bg-p-red p-1 mb-1 text-white">.bg-p-red</div>
+                        <div class="bg-p-gray p-1 mb-1 text-white">.bg-p-gray</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="bg-p-blue p-1 mb-1">.bg-p-blue</div>
+                        <div class="bg-p-green p-1 mb-1">.bg-p-green</div>
+                        <div class="bg-p-yellow p-1 mb-1">.bg-p-yellow</div>
+                        <div class="bg-p-pink p-1 mb-1">.bg-p-pink</div>
+                        <div class="bg-p-purple p-1 mb-1 text-white">.bg-p-purple</div>
+                        <div class="bg-p-orange p-1 mb-1 text-white">.bg-p-orange</div>
+                        <div class="bg-p-teal p-1 mb-1 text-white">.bg-p-teal</div>
+                        <div class="bg-p-red p-1 mb-1 text-white">.bg-p-red</div>
+                        <div class="bg-p-gray p-1 mb-1 text-white">.bg-p-gray</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="text" class="container bg-white rounded shadow mb-3 p-3"> <!--text-color-->
+        <h2> Text Colors (.text-color-n)</h2>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-blue-1 p-1 mb-1">.bg-blue-1</div>
+                        <div class="text-blue-2 p-1 mb-1">.text-blue-2</div>
+                        <div class="text-blue-3 p-1 mb-1">.text-blue-3</div>
+                        <div class="text-blue-4 p-1 mb-1">.text-blue-4</div>
+                        <div class="text-blue-5 p-1 mb-1">.text-blue-5</div>
+                        <div class="text-blue-6 p-1 mb-1">.text-blue-6</div>
+                        <div class="text-blue-7 p-1 mb-1">.text-blue-7</div>
+                        <div class="text-blue-8 p-1 mb-1">.text-blue-8</div>
+                        <div class="text-blue-9 p-1 mb-1">.bg-blue-9</div>
+                    </div>                      
+                        <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-blue-1 p-1 mb-1">.bg-blue-1</div>
+                        <div class="text-blue-2 p-1 mb-1">.text-blue-2</div>
+                        <div class="text-blue-3 p-1 mb-1">.text-blue-3</div>
+                        <div class="text-blue-4 p-1 mb-1">.text-blue-4</div>
+                        <div class="text-blue-5 p-1 mb-1">.text-blue-5</div>
+                        <div class="text-blue-6 p-1 mb-1">.text-blue-6</div>
+                        <div class="text-blue-7 p-1 mb-1">.text-blue-7</div>
+                        <div class="text-blue-8 p-1 mb-1">.text-blue-8</div>
+                        <div class="text-blue-9 p-1 mb-1">.bg-blue-9</div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-indigo-1 p-1 mb-1">.text-indigo-1</div>
+                        <div class="text-indigo-2 p-1 mb-1">.text-indigo-2</div>
+                        <div class="text-indigo-3 p-1 mb-1">.text-indigo-3</div>
+                        <div class="text-indigo-4 p-1 mb-1">.text-indigo-4</div>
+                        <div class="text-indigo-5 p-1 mb-1">.text-indigo-5</div>
+                        <div class="text-indigo-6 p-1 mb-1">.text-indigo-6</div>
+                        <div class="text-indigo-7 p-1 mb-1">.text-indigo-7</div>
+                        <div class="text-indigo-8 p-1 mb-1">.text-indigo-8</div>
+                        <div class="text-indigo-9 p-1 mb-1">.text-indigo-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-indigo-1 p-1 mb-1">.text-indigo-1</div>
+                        <div class="text-indigo-2 p-1 mb-1">.text-indigo-2</div>
+                        <div class="text-indigo-3 p-1 mb-1">.text-indigo-3</div>
+                        <div class="text-indigo-4 p-1 mb-1">.text-indigo-4</div>
+                        <div class="text-indigo-5 p-1 mb-1">.text-indigo-5</div>
+                        <div class="text-indigo-6 p-1 mb-1">.text-indigo-6</div>
+                        <div class="text-indigo-7 p-1 mb-1">.text-indigo-7</div>
+                        <div class="text-indigo-8 p-1 mb-1">.text-indigo-8</div>
+                        <div class="text-indigo-9 p-1 mb-1">.text-indigo-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-purple-1 p-1 mb-1">.text-purple-1</div>
+                        <div class="text-purple-2 p-1 mb-1">.text-purple-2</div>
+                        <div class="text-purple-3 p-1 mb-1">.text-purple-3</div>
+                        <div class="text-purple-4 p-1 mb-1">.text-purple-4</div>
+                        <div class="text-purple-5 p-1 mb-1">.text-purple-5</div>
+                        <div class="text-purple-6 p-1 mb-1">.text-purple-6</div>
+                        <div class="text-purple-7 p-1 mb-1">.text-purple-7</div>
+                        <div class="text-purple-8 p-1 mb-1">.text-purple-8</div>
+                        <div class="text-purple-9 p-1 mb-1">.text-purple-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-purple-1 p-1 mb-1">.text-purple-1</div>
+                        <div class="text-purple-2 p-1 mb-1">.text-purple-2</div>
+                        <div class="text-purple-3 p-1 mb-1">.text-purple-3</div>
+                        <div class="text-purple-4 p-1 mb-1">.text-purple-4</div>
+                        <div class="text-purple-5 p-1 mb-1">.text-purple-5</div>
+                        <div class="text-purple-6 p-1 mb-1">.text-purple-6</div>
+                        <div class="text-purple-7 p-1 mb-1">.text-purple-7</div>
+                        <div class="text-purple-8 p-1 mb-1">.text-purple-8</div>
+                        <div class="text-purple-9 p-1 mb-1">.text-purple-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-pink-1 p-1 mb-1">.text-pink-1</div>
+                        <div class="text-pink-2 p-1 mb-1">.text-pink-2</div>
+                        <div class="text-pink-3 p-1 mb-1">.text-pink-3</div>
+                        <div class="text-pink-4 p-1 mb-1">.text-pink-4</div>
+                        <div class="text-pink-5 p-1 mb-1">.text-pink-5</div>
+                        <div class="text-pink-6 p-1 mb-1 ">.text-pink-6</div>
+                        <div class="text-pink-7 p-1 mb-1">.text-pink-7</div>
+                        <div class="text-pink-8 p-1 mb-1">.text-pink-8</div>
+                        <div class="text-pink-9 p-1 mb-1">.text-pink-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-pink-1 p-1 mb-1">.text-pink-1</div>
+                        <div class="text-pink-2 p-1 mb-1">.text-pink-2</div>
+                        <div class="text-pink-3 p-1 mb-1">.text-pink-3</div>
+                        <div class="text-pink-4 p-1 mb-1">.text-pink-4</div>
+                        <div class="text-pink-5 p-1 mb-1">.text-pink-5</div>
+                        <div class="text-pink-6 p-1 mb-1">.text-pink-6</div>
+                        <div class="text-pink-7 p-1 mb-1">.text-pink-7</div>
+                        <div class="text-pink-8 p-1 mb-1">.text-pink-8</div>
+                        <div class="text-pink-9 p-1 mb-1">.text-pink-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-red-1 p-1 mb-1">.text-red-1</div>
+                        <div class="text-red-2 p-1 mb-1">.text-red-2</div>
+                        <div class="text-red-3 p-1 mb-1">.text-red-3</div>
+                        <div class="text-red-4 p-1 mb-1">.text-red-4</div>
+                        <div class="text-red-5 p-1 mb-1">.text-red-5</div>
+                        <div class="text-red-6 p-1 mb-1">.text-red-6</div>
+                        <div class="text-red-7 p-1 mb-1">.text-red-7</div>
+                        <div class="text-red-8 p-1 mb-1">.text-red-8</div>
+                        <div class="text-red-9 p-1 mb-1">.text-red-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-red-1 p-1 mb-1">.text-red-1</div>
+                        <div class="text-red-2 p-1 mb-1">.text-red-2</div>
+                        <div class="text-red-3 p-1 mb-1">.text-red-3</div>
+                        <div class="text-red-4 p-1 mb-1">.text-red-4</div>
+                        <div class="text-red-5 p-1 mb-1">.text-red-5</div>
+                        <div class="text-red-6 p-1 mb-1">.text-red-6</div>
+                        <div class="text-red-7 p-1 mb-1">.text-red-7</div>
+                        <div class="text-red-8 p-1 mb-1">.text-red-8</div>
+                        <div class="text-red-9 p-1 mb-1">.text-red-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-orange-1 p-1 mb-1">.text-orange-1</div>
+                        <div class="text-orange-2 p-1 mb-1">.text-orange-2</div>
+                        <div class="text-orange-3 p-1 mb-1">.text-orange-3</div>
+                        <div class="text-orange-4 p-1 mb-1">.text-orange-4</div>
+                        <div class="text-orange-5 p-1 mb-1">.text-orange-5</div>
+                        <div class="text-orange-6 p-1 mb-1">.text-orange-6</div>
+                        <div class="text-orange-7 p-1 mb-1">.text-orange-7</div>
+                        <div class="text-orange-8 p-1 mb-1">.text-orange-8</div>
+                        <div class="text-orange-9 p-1 mb-1">.text-orange-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-orange-1 p-1 mb-1">.text-orange-1</div>
+                        <div class="text-orange-2 p-1 mb-1">.text-orange-2</div>
+                        <div class="text-orange-3 p-1 mb-1">.text-orange-3</div>
+                        <div class="text-orange-4 p-1 mb-1">.text-orange-4</div>
+                        <div class="text-orange-5 p-1 mb-1">.text-orange-5</div>
+                        <div class="text-orange-6 p-1 mb-1">.text-orange-6</div>
+                        <div class="text-orange-7 p-1 mb-1">.text-orange-7</div>
+                        <div class="text-orange-8 p-1 mb-1">.text-orange-8</div>
+                        <div class="text-orange-9 p-1 mb-1">.text-orange-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-yellow-1 p-1 mb-1">.text-yellow-1</div>
+                        <div class="text-yellow-2 p-1 mb-1">.text-yellow-2</div>
+                        <div class="text-yellow-3 p-1 mb-1">.text-yellow-3</div>
+                        <div class="text-yellow-4 p-1 mb-1">.text-yellow-4</div>
+                        <div class="text-yellow-5 p-1 mb-1">.text-yellow-5</div>
+                        <div class="text-yellow-6 p-1 mb-1">.text-yellow-6</div>
+                        <div class="text-yellow-7 p-1 mb-1">.text-yellow-7</div>
+                        <div class="text-yellow-8 p-1 mb-1">.text-yellow-8</div>
+                        <div class="text-yellow-9 p-1 mb-1">.text-yellow-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-yellow-1 p-1 mb-1">.text-yellow-1</div>
+                        <div class="text-yellow-2 p-1 mb-1">.text-yellow-2</div>
+                        <div class="text-yellow-3 p-1 mb-1">.text-yellow-3</div>
+                        <div class="text-yellow-4 p-1 mb-1">.text-yellow-4</div>
+                        <div class="text-yellow-5 p-1 mb-1">.text-yellow-5</div>
+                        <div class="text-yellow-6 p-1 mb-1">.text-yellow-6</div>
+                        <div class="text-yellow-7 p-1 mb-1">.text-yellow-7</div>
+                        <div class="text-yellow-8 p-1 mb-1">.text-yellow-8</div>
+                        <div class="text-yellow-9 p-1 mb-1">.text-yellow-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-green-1 p-1 mb-1">.text-green-1</div>
+                        <div class="text-green-2 p-1 mb-1">.text-green-2</div>
+                        <div class="text-green-3 p-1 mb-1">.text-green-3</div>
+                        <div class="text-green-4 p-1 mb-1">.text-green-4</div>
+                        <div class="text-green-5 p-1 mb-1">.text-green-5</div>
+                        <div class="text-green-6 p-1 mb-1 ">.text-green-6</div>
+                        <div class="text-green-7 p-1 mb-1 ">.text-green-7</div>
+                        <div class="text-green-8 p-1 mb-1 ">.text-green-8</div>
+                        <div class="text-green-9 p-1 mb-1 ">.text-green-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-green-1 p-1 mb-1">.text-green-1</div>
+                        <div class="text-green-2 p-1 mb-1">.text-green-2</div>
+                        <div class="text-green-3 p-1 mb-1">.text-green-3</div>
+                        <div class="text-green-4 p-1 mb-1">.text-green-4</div>
+                        <div class="text-green-5 p-1 mb-1 ">.text-green-5</div>
+                        <div class="text-green-6 p-1 mb-1 ">.text-green-6</div>
+                        <div class="text-green-7 p-1 mb-1 ">.text-green-7</div>
+                        <div class="text-green-8 p-1 mb-1 ">.text-green-8</div>
+                        <div class="text-green-9 p-1 mb-1 ">.text-green-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-teal-1 p-1 mb-1">.text-teal-1</div>
+                        <div class="text-teal-2 p-1 mb-1">.text-teal-2</div>
+                        <div class="text-teal-3 p-1 mb-1">.text-teal-3</div>
+                        <div class="text-teal-4 p-1 mb-1">.text-teal-4</div>
+                        <div class="text-teal-5 p-1 mb-1">.text-teal-5</div>
+                        <div class="text-teal-6 p-1 mb-1 ">.text-teal-6</div>
+                        <div class="text-teal-7 p-1 mb-1 ">.text-teal-7</div>
+                        <div class="text-teal-8 p-1 mb-1 ">.text-teal-8</div>
+                        <div class="text-teal-9 p-1 mb-1 ">.text-teal-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-teal-1 p-1 mb-1">.text-teal-1</div>
+                        <div class="text-teal-2 p-1 mb-1">.text-teal-2</div>
+                        <div class="text-teal-3 p-1 mb-1">.text-teal-3</div>
+                        <div class="text-teal-4 p-1 mb-1">.text-teal-4</div>
+                        <div class="text-teal-5 p-1 mb-1">.text-teal-5</div>
+                        <div class="text-teal-6 p-1 mb-1 ">.text-teal-6</div>
+                        <div class="text-teal-7 p-1 mb-1 ">.text-teal-7</div>
+                        <div class="text-teal-8 p-1 mb-1 ">.text-teal-8</div>
+                        <div class="text-teal-9 p-1 mb-1 ">.text-teal-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-cyan-1 p-1 mb-1">.text-cyan-1</div>
+                        <div class="text-cyan-2 p-1 mb-1">.text-cyan-2</div>
+                        <div class="text-cyan-3 p-1 mb-1">.text-cyan-3</div>
+                        <div class="text-cyan-4 p-1 mb-1">.text-cyan-4</div>
+                        <div class="text-cyan-5 p-1 mb-1 ">.text-cyan-5</div>
+                        <div class="text-cyan-6 p-1 mb-1 ">.text-cyan-6</div>
+                        <div class="text-cyan-7 p-1 mb-1 ">.text-cyan-7</div>
+                        <div class="text-cyan-8 p-1 mb-1 ">.text-cyan-8</div>
+                        <div class="text-cyan-9 p-1 mb-1 ">.text-cyan-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-cyan-1 p-1 mb-1">.text-cyan-1</div>
+                        <div class="text-cyan-2 p-1 mb-1">.text-cyan-2</div>
+                        <div class="text-cyan-3 p-1 mb-1">.text-cyan-3</div>
+                        <div class="text-cyan-4 p-1 mb-1">.text-cyan-4</div>
+                        <div class="text-cyan-5 p-1 mb-1 ">.text-cyan-5</div>
+                        <div class="text-cyan-6 p-1 mb-1 ">.text-cyan-6</div>
+                        <div class="text-cyan-7 p-1 mb-1 ">.text-cyan-7</div>
+                        <div class="text-cyan-8 p-1 mb-1 ">.text-cyan-8</div>
+                        <div class="text-cyan-9 p-1 mb-1 ">.text-cyan-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-gray-1 p-1 mb-1">.text-gray-1</div>
+                        <div class="text-gray-2 p-1 mb-1">.text-gray-2</div>
+                        <div class="text-gray-3 p-1 mb-1">.text-gray-3</div>
+                        <div class="text-gray-4 p-1 mb-1">.text-gray-4</div>
+                        <div class="text-gray-5 p-1 mb-1 ">.text-gray-5</div>
+                        <div class="text-gray-6 p-1 mb-1 ">.text-gray-6</div>
+                        <div class="text-gray-7 p-1 mb-1 ">.text-gray-7</div>
+                        <div class="text-gray-8 p-1 mb-1 ">.text-gray-8</div>
+                        <div class="text-gray-9 p-1 mb-1 ">.text-gray-9</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-gray-1 p-1 mb-1">.text-gray-1</div>
+                        <div class="text-gray-2 p-1 mb-1">.text-gray-2</div>
+                        <div class="text-gray-3 p-1 mb-1">.text-gray-3</div>
+                        <div class="text-gray-4 p-1 mb-1">.text-gray-4</div>
+                        <div class="text-gray-5 p-1 mb-1 ">.text-gray-5</div>
+                        <div class="text-gray-6 p-1 mb-1 ">.text-gray-6</div>
+                        <div class="text-gray-7 p-1 mb-1 ">.text-gray-7</div>
+                        <div class="text-gray-8 p-1 mb-1 ">.text-gray-8</div>
+                        <div class="text-gray-9 p-1 mb-1 ">.text-gray-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 mb-2 border">
+                        <div class="text-p-blue p-1 mb-1">.text-p-blue</div>
+                        <div class="text-p-green p-1 mb-1">.text-p-green</div>
+                        <div class="text-p-yellow p-1 mb-1">.text-p-yellow</div>
+                        <div class="text-p-pink p-1 mb-1">.text-p-pink</div>
+                        <div class="text-p-purple p-1 mb-1 ">.text-p-purple</div>
+                        <div class="text-p-orange p-1 mb-1 ">.text-p-orange</div>
+                        <div class="text-p-teal p-1 mb-1 ">.text-p-teal</div>
+                        <div class="text-p-red p-1 mb-1 ">.text-p-red</div>
+                        <div class="text-p-gray p-1 mb-1 ">.text-p-gray</div>
+                    </div>                      
+                    <div class="col-md-6 bg-black p-3 mb-2 border">
+                        <div class="text-p-blue p-1 mb-1">.text-p-blue</div>
+                        <div class="text-p-green p-1 mb-1">.text-p-green</div>
+                        <div class="text-p-yellow p-1 mb-1">.text-p-yellow</div>
+                        <div class="text-p-pink p-1 mb-1">.text-p-pink</div>
+                        <div class="text-p-purple p-1 mb-1 ">.text-p-purple</div>
+                        <div class="text-p-orange p-1 mb-1 ">.text-p-orange</div>
+                        <div class="text-p-teal p-1 mb-1 ">.text-p-teal</div>
+                        <div class="text-p-red p-1 mb-1 ">.text-p-red</div>
+                        <div class="text-p-gray p-1 mb-1 ">.text-p-gray</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="borders" class="container bg-white rounded shadow mb-3 p-3"> <!--border-color-->
+        <h2> Border Colors (.border-color-n)</h2>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-blue-1 small">.border-blue-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-blue-1 text-white small">.border-blue-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-2 small">.border-blue-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-2 text-white small">.border-blue-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-3 small">.border-blue-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-3 text-white small">.border-blue-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-4 small">.border-blue-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-4 text-white small">.border-blue-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-5 small">.border-blue-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-5 text-white small">.border-blue-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white ">
+                        <div class="p-1 mb-1 border border-4 border-blue-6 small">.border-blue-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-6 text-white small">.border-blue-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-7 small">.border-blue-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-7 text-white small">.border-blue-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-blue-8 small">.border-blue-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-blue-8 text-white small">.border-blue-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-blue-9 small">.border-blue-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-blue-9 text-white small">.border-blue-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-indigo-1 small">.border-indigo-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-indigo-1 text-white small">.border-indigo-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-2 small">.border-indigo-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-2 text-white small">.border-indigo-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-3 small">.border-indigo-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-3 text-white small">.border-indigo-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-4 small">.border-indigo-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-4 text-white small">.border-indigo-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-5 small">.border-indigo-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-5 text-white small">.border-indigo-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-6 small">.border-indigo-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-6 text-white small">.border-indigo-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-7 small">.border-indigo-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-7 text-white small">.border-indigo-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-indigo-8 small">.border-indigo-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-indigo-8 text-white small">.border-indigo-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-indigo-9 small">.border-indigo-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-indigo-9 text-white small">.border-indigo-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-purple-1 small">.border-purple-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-purple-1 text-white small">.border-purple-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-2 small">.border-purple-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-2 text-white small">.border-purple-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-3 small">.border-purple-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-3 text-white small">.border-purple-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-4 small">.border-purple-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-4 text-white small">.border-purple-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-5 small">.border-purple-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-5 text-white small">.border-purple-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-6 small">.border-purple-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-6 text-white small">.border-purple-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-7 small">.border-purple-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-7 text-white small">.border-purple-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-purple-8 small">.border-purple-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-purple-8 text-white small">.border-purple-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-purple-9 small">.border-purple-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-purple-9 text-white small">.border-purple-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-pink-1 small">.border-pink-1</div>
+                                       </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-pink-1 text-white small">.border-pink-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-2 small">.border-pink-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-2 text-white small">.border-pink-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-3 small">.border-pink-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-3 text-white small">.border-pink-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-4 small">.border-pink-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-4 text-white small">.border-pink-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-5 small">.border-pink-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-5 text-white small">.border-pink-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-6 small">.border-pink-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-6 text-white small">.border-pink-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-7 small">.border-pink-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-7 text-white small">.border-pink-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-8 small">.border-pink-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-8 text-white small">.border-pink-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-pink-9 small">.border-pink-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-pink-9 text-white small">.border-pink-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-red-1 small">.border-red-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-red-1 text-white small">.border-red-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-2 small">.border-red-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-2 text-white small">.border-red-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-3 small">.border-red-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-3 text-white small">.border-red-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-4 small">.border-red-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-4 text-white small">.border-red-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-5 small">.border-red-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-5 text-white small">.border-red-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white ">
+                        <div class="p-1 mb-1 border border-4 border-red-6 small">.border-red-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-6 text-white small">.border-red-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-7 small">.border-red-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-7 text-white small">.border-red-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-red-8 small">.border-red-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-red-8 text-white small">.border-red-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-red-9 small">.border-red-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-red-9 text-white small">.border-red-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-orange-1 small">.border-orange-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-orange-1 text-white small">.border-orange-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-2 small">.border-orange-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-2 text-white small">.border-orange-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-3 small">.border-orange-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-3 text-white small">.border-orange-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-4 small">.border-orange-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-4 text-white small">.border-orange-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-5 small">.border-orange-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-5 text-white small">.border-orange-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-6 small">.border-orange-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-6 text-white small">.border-orange-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-7 small">.border-orange-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-7 text-white small">.border-orange-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-orange-8 small">.border-orange-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-orange-8 text-white small">.border-orange-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-orange-9 small">.border-orange-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-orange-9 text-white small">.border-orange-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-yellow-1 small">.border-yellow-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-yellow-1 text-white small">.border-yellow-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-2 small">.border-yellow-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-2 text-white small">.border-yellow-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-3 small">.border-yellow-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-3 text-white small">.border-yellow-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-4 small">.border-yellow-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-4 text-white small">.border-yellow-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-5 small">.border-yellow-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-5 text-white small">.border-yellow-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-6 small">.border-yellow-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-6 text-white small">.border-yellow-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-7 small">.border-yellow-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-7 text-white small">.border-yellow-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-yellow-8 small">.border-yellow-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-yellow-8 text-white small">.border-yellow-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-yellow-9 small">.border-yellow-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-yellow-9 text-white small">.border-yellow-9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-green-1 small">.border-green-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-green-1 text-white small">.border-green-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-2 small">.border-green-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-2 text-white small">.border-green-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-3 small">.border-green-3</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-3 text-white small">.border-green-3</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-4 small">.border-green-4</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-4 text-white small">.border-green-4</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-5 small">.border-green-5</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-5 text-white small">.border-green-5</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-6 small">.border-green-6</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-6 text-white small">.border-green-6</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-7 small">.border-green-7</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-7 text-white small">.border-green-7</div>
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-green-8 small">.border-green-8</div>    
+                    </div>
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-green-8 text-white small">.border-green-8</div>
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-green-9 small">.border-green-9</div>    
+                    </div>
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-green-9 text-white small">.border-green-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-teal-1 small">.border-teal-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-teal-1 text-white small">.border-teal-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-2 small">.border-teal-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-2 text-white small">.border-teal-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-3 small">.border-teal-3</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-3 text-white small">.border-teal-3</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-4 small">.border-teal-4</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-4 text-white small">.border-teal-4</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-5 small">.border-teal-5</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-5 text-white small">.border-teal-5</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-6 small">.border-teal-6</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-6 text-white small">.border-teal-6</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-7 small">.border-teal-7</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-7 text-white small">.border-teal-7</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-teal-8 small">.border-teal-8</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-teal-8 text-white small">.border-teal-8</div>     
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-teal-9 small">.border-teal-9</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-teal-9 text-white small">.border-teal-9</div>     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-cyan-1 small">.border-cyan-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-cyan-1 text-white small">.border-cyan-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-2 small">.border-cyan-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-2 text-white small">.border-cyan-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-3 small">.border-cyan-3</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-3 text-white small">.border-cyan-3</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-4 small">.border-cyan-4</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-4 text-white small">.border-cyan-4</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-5 small">.border-cyan-5</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-5 text-white small">.border-cyan-5</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-6 small">.border-cyan-6</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-6 text-white small">.border-cyan-6</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-7 small">.border-cyan-7</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-7 text-white small">.border-cyan-7</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-cyan-8 small">.border-cyan-8</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-cyan-8 text-white small">.border-cyan-8</div>     
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-cyan-9 small">.border-cyan-9</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-cyan-9 text-white small">.border-cyan-9</div>     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-gray-1 small">.border-gray-1</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-gray-1 text-white small">.border-gray-1</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-2 small">.border-gray-2</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-2 text-white small">.border-gray-2</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-3 small">.border-gray-3</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-3 text-white small">.border-gray-3</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-4 small">.border-gray-4</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-4 text-white small">.border-gray-4</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-5 small">.border-gray-5</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-5 text-white small">.border-gray-5</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-6 small">.border-gray-6</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-6 text-white small">.border-gray-6</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-7 small">.border-gray-7</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-7 text-white small">.border-gray-7</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-gray-8 small">.border-gray-8</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-gray-8 text-white small">.border-gray-8</div>     
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-gray-9 small">.border-gray-9</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-gray-9 text-white small">.border-gray-9</div>     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="row">
+                    <div class="col-md-6 bg-white pt-3">
+                        <div class="p-1 mb-1 border border-4 border-p-blue small">.border-p-blue</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pt-3">
+                        <div class="p-1 mb-1 border border-4 border-p-blue text-white small">.border-p-blue</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-green small">.border-p-green</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-green text-white small">.border-p-green</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-yellow small">.border-p-yellow</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-yellow text-white small">.border-p-yellow</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-pink small">.border-p-pink</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-pink text-white small">.border-p-pink</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-purple small">.border-p-purple</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-purple text-white small">.border-p-purple</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-orange small">.border-p-orange</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-orange text-white small">.border-p-orange</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-teal small">.border-p-teal</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-teal text-white small">.border-p-teal</div>     
+                    </div>
+                    <div class="col-md-6 bg-white">
+                        <div class="p-1 mb-1 border border-4 border-p-red small">.border-p-red</div>
+                    </div>      
+                    <div class="col-md-6 bg-black">
+                        <div class="p-1 mb-1 border border-4 border-p-red text-white small">.border-p-red</div>     
+                    </div>
+                    <div class="col-md-6 bg-white pb-3">
+                        <div class="p-1 mb-1 border border-4 border-p-gray small">.border-p-gray</div>
+                    </div>      
+                    <div class="col-md-6 bg-black pb-3">
+                        <div class="p-1 mb-1 border border-4 border-p-gray text-white small">.border-p-gray</div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttons" class="container bg-white rounded shadow mb-3 p-3">
+        <h2>Button Colors (btn-color)</h2>
+
+        <h3>Small Buttons</h3>
+        <button type="button" class="btn btn-blue btn-sm m-1">.btn-blue</button>
+        <button type="button" class="btn btn-indigo btn-sm m-1">.btn-indigo</button>
+        <button type="button" class="btn btn-purple btn-sm m-1">.btn-purple</button>        
+        <button type="button" class="btn btn-pink btn-sm m-1">.btn-pink</button>
+        <button type="button" class="btn btn-red btn-sm m-1">.btn-red</button>
+        <button type="button" class="btn btn-orange btn-sm m-1">.btn-orange</button>   
+        <button type="button" class="btn btn-yellow btn-sm m-1">.btn-yellow</button>
+        <button type="button" class="btn btn-green btn-sm m-1">.btn-green  </button>
+        <button type="button" class="btn btn-teal btn-sm m-1">.btn-teal</button>
+        <button type="button" class="btn btn-cyan btn-sm m-1">.btn-cyan</button>
+        <button type="button" class="btn btn-gray btn-sm m-1">.btn-gray</button>
+
+        <h3>Regular Buttons</h3>
+        <button type="button" class="btn btn-blue m-1">.btn-blue</button>
+        <button type="button" class="btn btn-indigo m-1">.btn-indigo</button>
+        <button type="button" class="btn btn-purple m-1">.btn-purple</button>        
+        <button type="button" class="btn btn-pink m-1">.btn-pink</button>
+        <button type="button" class="btn btn-red m-1">.btn-red</button>
+        <button type="button" class="btn btn-orange m-1">.btn-orange</button>   
+        <button type="button" class="btn btn-yellow m-1">.btn-yellow</button>
+        <button type="button" class="btn btn-green m-1">.btn-green  </button>
+        <button type="button" class="btn btn-teal m-1">.btn-teal</button>
+        <button type="button" class="btn btn-cyan m-1">.btn-cyan</button>
+        <button type="button" class="btn btn-gray m-1">.btn-gray</button>
+
+        <h3>Large Buttons</h3>
+        <button type="button" class="btn btn-blue btn-lg m-1">.btn-blue</button>
+        <button type="button" class="btn btn-indigo btn-lg m-1">.btn-indigo</button>
+        <button type="button" class="btn btn-purple btn-lg m-1">.btn-purple</button>        
+        <button type="button" class="btn btn-pink btn-lg m-1">.btn-pink</button>
+        <button type="button" class="btn btn-red btn-lg m-1">.btn-red</button>
+        <button type="button" class="btn btn-orange btn-lg m-1">.btn-orange</button>   
+        <button type="button" class="btn btn-yellow btn-lg m-1">.btn-yellow</button>
+        <button type="button" class="btn btn-green btn-lg m-1">.btn-green  </button>
+        <button type="button" class="btn btn-teal btn-lg m-1">.btn-teal</button>
+        <button type="button" class="btn btn-cyan btn-lg m-1">.btn-cyan</button>
+        <button type="button" class="btn btn-gray btn-lg m-1">.btn-gray</button>
+
+
+        <h3>Pastel Buttons</h3>
+        <button type="button" class="btn btn-p-blue m-1">.btn-p-blue</button>
+        <button type="button" class="btn btn-p-green m-1">.btn-p-green</button>
+        <button type="button" class="btn btn-p-yellow m-1">.btn-p-yellow</button>
+        <button type="button" class="btn btn-p-pink m-1">.btn-p-pink</button>
+        <button type="button" class="btn btn-p-purple m-1">.btn-p-purple</button>        
+        <button type="button" class="btn btn-p-orange m-1">.btn-p-orange</button>   
+        <button type="button" class="btn btn-p-teal m-1">.btn-p-teal</button>
+        <button type="button" class="btn btn-p-red m-1">.btn-p-red</button>
+        <button type="button" class="btn btn-p-gray m-1">.btn-p-gray</button>
+
+    </div>
+</body>
