@@ -12,4 +12,6 @@ I have created the classes for backgrounds, texts, and borders. also a number of
 
 As a side note, having watched my students work, I was drawn to one particular student, who will be known as ZA and the way they used pastels. I have added an additional block for these, as sometimes, you just want something a bit softer! - Thanks ZA, you know who you are!
 
-If you want a demo then please click [here](https://wprocter.github.io/wp_bs_colors/demo.html)
+If you want a demo then please click [here	](https://wprocter.github.io/wp_bs_colors/demo.html)
+
+If you want to down load the files they are [here](https://github.com/wprocter/wp_bs_colors)
